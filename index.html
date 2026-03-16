@@ -2,142 +2,141 @@
 <html lang="pt-BR">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Rayane Santana | DevOps Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
-background:#0a0a0a;
 color:white;
+background:#0f172a;
 }
 
 nav{
-position:fixed;
-top:0;
-width:100%;
 display:flex;
 justify-content:center;
 gap:40px;
-background:#111;
-padding:15px;
-z-index:1000;
+padding:20px;
+background:#020617;
+position:fixed;
+width:100%;
+top:0;
+z-index:10;
 }
 
 nav a{
-color:#4fd1c5;
+color:#38bdf8;
 text-decoration:none;
 font-weight:bold;
 }
 
-.game-hero{
-
+.hero{
 height:100vh;
+background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
-
-background:linear-gradient(135deg,#020024,#090979,#00d4ff);
-
 }
 
 .hero-overlay{
-
 background:rgba(0,0,0,0.6);
 padding:50px;
 border-radius:15px;
 text-align:center;
-
+box-shadow:0 0 30px #00ffff;
 }
 
-.game-title{
-
-font-size:3rem;
-color:#4fd1c5;
-
+.hero h1{
+font-size:48px;
+color:#22d3ee;
+text-shadow:0 0 15px #00ffff;
 }
 
-.game-subtitle{
-
+.hero p{
+font-size:20px;
 margin-top:10px;
-margin-bottom:40px;
-
 }
 
 .mission-buttons{
-
+margin-top:30px;
 display:flex;
-gap:20px;
 flex-wrap:wrap;
+gap:20px;
 justify-content:center;
-
 }
 
 .mission-btn{
-
-background:#111;
-border:2px solid #4fd1c5;
-
-color:#4fd1c5;
-
-padding:15px 25px;
+padding:12px 25px;
+background:transparent;
+border:2px solid #22d3ee;
 border-radius:8px;
-
+color:#22d3ee;
 cursor:pointer;
-
 transition:0.3s;
-
+font-size:16px;
 }
 
 .mission-btn:hover{
-
-transform:scale(1.1);
-background:#4fd1c5;
+background:#22d3ee;
 color:black;
-
+box-shadow:0 0 15px #22d3ee;
 }
 
 section{
-
-padding:100px 10%;
-
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
 }
 
 h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
 
-color:#4fd1c5;
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
 
+.skill-card{
+background:#020617;
+padding:20px;
+border-radius:10px;
+text-align:center;
+border:1px solid #1e293b;
 }
 
 .projects{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-
 }
 
-.card{
-
-background:#111;
-padding:25px;
+.project-card{
+background:#020617;
+padding:20px;
 border-radius:10px;
+border:1px solid #1e293b;
+transition:0.3s;
+}
 
+.project-card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 15px #22d3ee;
 }
 
 footer{
-
 text-align:center;
 padding:30px;
-background:#111;
-
+background:#020617;
+margin-top:50px;
 }
 
 </style>
@@ -147,36 +146,26 @@ background:#111;
 <body>
 
 <nav>
-
 <a href="#sobre">Sobre</a>
 <a href="#skills">Skills</a>
 <a href="#projetos">Projetos</a>
 <a href="#contato">Contato</a>
-
 </nav>
 
-<section class="game-hero">
+<section class="hero">
 
 <div class="hero-overlay">
 
-<h1 class="game-title">Rayane Santana</h1>
+<h1>Rayane Santana</h1>
 
-<p class="game-subtitle">
-
-DevOps Engineer em formação.  
-Escolha uma missão e explore meus projetos.
-
-</p>
+<p>DevOps Engineer em formação. Explore meus projetos.</p>
 
 <div class="mission-buttons">
 
-<button class="mission-btn">🚀 Missão Docker</button>
-
-<button class="mission-btn">☁️ Missão AWS</button>
-
-<button class="mission-btn">⚙️ Missão CI/CD</button>
-
-<button class="mission-btn">🛰 Missão Infraestrutura</button>
+<button class="mission-btn">Missão Docker</button>
+<button class="mission-btn">Missão AWS</button>
+<button class="mission-btn">Missão CI/CD</button>
+<button class="mission-btn">Missão Infraestrutura</button>
 
 </div>
 
@@ -189,11 +178,9 @@ Escolha uma missão e explore meus projetos.
 <h2>Sobre Mim</h2>
 
 <p>
-
-Profissional em transição para DevOps com foco em automação, infraestrutura em nuvem e práticas modernas de CI/CD.
-
+Profissional em transição para DevOps com foco em automação,
+infraestrutura em nuvem e práticas modernas de CI/CD.
 Experiência prática com Docker, Linux, AWS e Infrastructure as Code.
-
 </p>
 
 </section>
@@ -202,16 +189,16 @@ Experiência prática com Docker, Linux, AWS e Infrastructure as Code.
 
 <h2>Skills</h2>
 
-<ul>
+<div class="skills">
 
-<li>Docker</li>
-<li>AWS</li>
-<li>Terraform</li>
-<li>Linux</li>
-<li>CI/CD</li>
-<li>GitHub Actions</li>
+<div class="skill-card">Docker</div>
+<div class="skill-card">AWS</div>
+<div class="skill-card">Linux</div>
+<div class="skill-card">Git</div>
+<div class="skill-card">CI/CD</div>
+<div class="skill-card">Terraform</div>
 
-</ul>
+</div>
 
 </section>
 
@@ -221,40 +208,19 @@ Experiência prática com Docker, Linux, AWS e Infrastructure as Code.
 
 <div class="projects">
 
-<div class="card">
-
+<div class="project-card">
 <h3>Deploy com Docker + Nginx</h3>
-
-<p>
-
-Aplicação containerizada utilizando Docker e publicada em servidor Linux com Nginx.
-
-</p>
-
+<p>Aplicação containerizada com Docker rodando em servidor Linux.</p>
 </div>
 
-<div class="card">
-
-<h3>Infraestrutura AWS com Terraform</h3>
-
-<p>
-
-Provisionamento automático de infraestrutura utilizando Infrastructure as Code.
-
-</p>
-
+<div class="project-card">
+<h3>Infraestrutura AWS</h3>
+<p>Provisionamento de infraestrutura usando Terraform.</p>
 </div>
 
-<div class="card">
-
+<div class="project-card">
 <h3>Pipeline CI/CD</h3>
-
-<p>
-
-Automação de build e deploy utilizando GitHub Actions.
-
-</p>
-
+<p>Automação de build e deploy utilizando GitHub Actions.</p>
 </div>
 
 </div>
@@ -265,44 +231,17 @@ Automação de build e deploy utilizando GitHub Actions.
 
 <h2>Contato</h2>
 
-<p>Email: seu@email.com</p>
+<p>Email: rayane@email.com</p>
 
-<p>
-
-<a href="https://github.com/">GitHub</a>
-
-</p>
+<p>GitHub: github.com/rayane</p>
 
 </section>
 
 <footer>
 
-<p>
-
-© 2026 Rayane Santana - DevOps Portfolio
-
-</p>
+<p>© 2026 Rayane Santana - DevOps Portfolio</p>
 
 </footer>
 
-<script>
-
-const buttons = document.querySelectorAll(".mission-btn");
-
-buttons.forEach((btn)=>{
-
-btn.addEventListener("click",()=>{
-
-const mission = btn.innerText;
-
-alert("🚀 Missão iniciada: "+mission);
-
-});
-
-});
-
-</script>
-
 </body>
-
 </html>
