@@ -2,98 +2,307 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Rayane Santana | DevOps</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rayane Santana | DevOps Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0a0a0a;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:40px;
+background:#111;
+padding:15px;
+z-index:1000;
+}
+
+nav a{
+color:#4fd1c5;
+text-decoration:none;
+font-weight:bold;
+}
+
+.game-hero{
+
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:linear-gradient(135deg,#020024,#090979,#00d4ff);
+
+}
+
+.hero-overlay{
+
+background:rgba(0,0,0,0.6);
+padding:50px;
+border-radius:15px;
+text-align:center;
+
+}
+
+.game-title{
+
+font-size:3rem;
+color:#4fd1c5;
+
+}
+
+.game-subtitle{
+
+margin-top:10px;
+margin-bottom:40px;
+
+}
+
+.mission-buttons{
+
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.mission-btn{
+
+background:#111;
+border:2px solid #4fd1c5;
+
+color:#4fd1c5;
+
+padding:15px 25px;
+border-radius:8px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.mission-btn:hover{
+
+transform:scale(1.1);
+background:#4fd1c5;
+color:black;
+
+}
+
+section{
+
+padding:100px 10%;
+
+}
+
+h2{
+
+color:#4fd1c5;
+
+}
+
+.projects{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+.card{
+
+background:#111;
+padding:25px;
+border-radius:10px;
+
+}
+
+footer{
+
+text-align:center;
+padding:30px;
+background:#111;
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <div class="container">
+<nav>
 
-    <!-- NAV -->
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#skills">Skills</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+<a href="#sobre">Sobre</a>
+<a href="#skills">Skills</a>
+<a href="#projetos">Projetos</a>
+<a href="#contato">Contato</a>
 
-    <!-- HEADER -->
-    <header>
-      <h1>Rayane Santana</h1>
-    <p>
-    DevOps Engineer em formação com foco em Automação, Docker,
-    CI/CD e Infraestrutura como Código (IaC). 
-    Construindo projetos práticos com GitHub Pages e AWS.
-    </p>
+</nav>
 
-      <div class="cta">
-        <a href="#projetos" class="btn">Ver Projetos</a>
-        <a href="#contato" class="btn-outline">Contato</a>
-      </div>
-    </header>
+<section class="game-hero">
 
-    <!-- SOBRE -->
-    <section id="sobre">
-      <h2>🚀 Sobre Mim</h2>
-      <div class="card">
-        Profissional em transição para DevOps com foco em automação,
-        infraestrutura em nuvem e práticas modernas de CI/CD.
-      </div>
-    </section>
+<div class="hero-overlay">
 
-  <section id="skills">
-  <h2>🛠 Skills</h2>
+<h1 class="game-title">Rayane Santana</h1>
 
-  <div class="skills-grid">
-    <div class="card">Linux & Bash</div>
-    <div class="card">Git & GitHub</div>
-    <div class="card">Docker & Containers</div>
-    <div class="card">AWS (em aprendizado)</div>
-  </div>
+<p class="game-subtitle">
+
+DevOps Engineer em formação.  
+Escolha uma missão e explore meus projetos.
+
+</p>
+
+<div class="mission-buttons">
+
+<button class="mission-btn">🚀 Missão Docker</button>
+
+<button class="mission-btn">☁️ Missão AWS</button>
+
+<button class="mission-btn">⚙️ Missão CI/CD</button>
+
+<button class="mission-btn">🛰 Missão Infraestrutura</button>
+
+</div>
+
+</div>
+
 </section>
 
-    <!-- PROJETOS -->
-    <section id="projetos">
-      <h2>📂 Projetos</h2>
-      <div class="card">
-        Em breve: Projetos DevOps com Docker, CI/CD e AWS.
-      </div>
-    </section>
+<section id="sobre">
+
+<h2>Sobre Mim</h2>
+
+<p>
+
+Profissional em transição para DevOps com foco em automação, infraestrutura em nuvem e práticas modernas de CI/CD.
+
+Experiência prática com Docker, Linux, AWS e Infrastructure as Code.
+
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<ul>
+
+<li>Docker</li>
+<li>AWS</li>
+<li>Terraform</li>
+<li>Linux</li>
+<li>CI/CD</li>
+<li>GitHub Actions</li>
+
+</ul>
+
+</section>
+
+<section id="projetos">
+
+<h2>Projetos DevOps</h2>
+
+<div class="projects">
+
+<div class="card">
+
+<h3>Deploy com Docker + Nginx</h3>
+
+<p>
+
+Aplicação containerizada utilizando Docker e publicada em servidor Linux com Nginx.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Infraestrutura AWS com Terraform</h3>
+
+<p>
+
+Provisionamento automático de infraestrutura utilizando Infrastructure as Code.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Pipeline CI/CD</h3>
+
+<p>
+
+Automação de build e deploy utilizando GitHub Actions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
 
 <section id="contato">
-  <h2>📩 Contato</h2>
 
-  <div class="card contato-box">
-    <p>Email:</p>
+<h2>Contato</h2>
 
-    <a href="mailto:SEUEMAILREAL@gmail.com" class="email-link">
-      rayane.santana_@hotmail.com
-    </a>
+<p>Email: seu@email.com</p>
 
-    <div class="social-buttons">
-      <a href="https://www.linkedin.com/in/rayane-santana-dev"
-         target="_blank"
-         class="btn-outline">
-        LinkedIn
-      </a>
+<p>
 
-      <a href="https://github.com/SanthRay"
-         target="_blank"
-         class="btn">
-        GitHub
-      </a>
-    </div>
+<a href="https://github.com/">GitHub</a>
 
-  </div>
+</p>
+
 </section>
 
-  </div>
-</section>
+<footer>
 
-  </div>
+<p>
+
+© 2026 Rayane Santana - DevOps Portfolio
+
+</p>
+
+</footer>
+
+<script>
+
+const buttons = document.querySelectorAll(".mission-btn");
+
+buttons.forEach((btn)=>{
+
+btn.addEventListener("click",()=>{
+
+const mission = btn.innerText;
+
+alert("🚀 Missão iniciada: "+mission);
+
+});
+
+});
+
+</script>
 
 </body>
+
 </html>
