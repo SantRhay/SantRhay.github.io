@@ -7,143 +7,13 @@
 
 <title>Rayane Santana | DevOps Portfolio</title>
 
-<style>
-
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-color:white;
-background:#0f172a;
-}
-
-nav{
-display:flex;
-justify-content:center;
-gap:40px;
-padding:20px;
-background:#020617;
-position:fixed;
-width:100%;
-top:0;
-z-index:10;
-}
-
-nav a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-height:100vh;
-background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-.hero-overlay{
-background:rgba(0,0,0,0.6);
-padding:50px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 0 30px #00ffff;
-}
-
-.hero h1{
-font-size:48px;
-color:#22d3ee;
-text-shadow:0 0 15px #00ffff;
-}
-
-.hero p{
-font-size:20px;
-margin-top:10px;
-}
-
-.mission-buttons{
-margin-top:30px;
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
-}
-
-.mission-btn{
-padding:12px 25px;
-background:transparent;
-border:2px solid #22d3ee;
-border-radius:8px;
-color:#22d3ee;
-cursor:pointer;
-transition:0.3s;
-font-size:16px;
-}
-
-.mission-btn:hover{
-background:#22d3ee;
-color:black;
-box-shadow:0 0 15px #22d3ee;
-}
-
-section{
-padding:80px 20px;
-max-width:1000px;
-margin:auto;
-}
-
-h2{
-color:#38bdf8;
-margin-bottom:20px;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-}
-
-.skill-card{
-background:#020617;
-padding:20px;
-border-radius:10px;
-text-align:center;
-border:1px solid #1e293b;
-}
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.project-card{
-background:#020617;
-padding:20px;
-border-radius:10px;
-border:1px solid #1e293b;
-transition:0.3s;
-}
-
-.project-card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 15px #22d3ee;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
-margin-top:50px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+
+<header>
 
 <nav>
 <a href="#sobre">Sobre</a>
@@ -152,20 +22,22 @@ margin-top:50px;
 <a href="#contato">Contato</a>
 </nav>
 
+</header>
+
 <section class="hero">
 
-<div class="hero-overlay">
+<div class="hero-card">
 
 <h1>Rayane Santana</h1>
 
-<p>DevOps Engineer em formação. Explore meus projetos.</p>
+<p>DevOps Engineer em formação</p>
 
-<div class="mission-buttons">
+<div class="buttons">
 
-<button class="mission-btn">Missão Docker</button>
-<button class="mission-btn">Missão AWS</button>
-<button class="mission-btn">Missão CI/CD</button>
-<button class="mission-btn">Missão Infraestrutura</button>
+<button>🚀 Missão Docker</button>
+<button>☁️ Missão AWS</button>
+<button>⚙️ Missão CI/CD</button>
+<button>🛠 Missão Infraestrutura</button>
 
 </div>
 
@@ -179,26 +51,9 @@ margin-top:50px;
 
 <p>
 Profissional em transição para DevOps com foco em automação,
-infraestrutura em nuvem e práticas modernas de CI/CD.
-Experiência prática com Docker, Linux, AWS e Infrastructure as Code.
+infraestrutura em nuvem e CI/CD. Experiência com Docker, Linux,
+AWS e Infrastructure as Code.
 </p>
-
-</section>
-
-<section id="skills">
-
-<h2>Skills</h2>
-
-<div class="skills">
-
-<div class="skill-card">Docker</div>
-<div class="skill-card">AWS</div>
-<div class="skill-card">Linux</div>
-<div class="skill-card">Git</div>
-<div class="skill-card">CI/CD</div>
-<div class="skill-card">Terraform</div>
-
-</div>
 
 </section>
 
@@ -206,40 +61,32 @@ Experiência prática com Docker, Linux, AWS e Infrastructure as Code.
 
 <h2>Projetos DevOps</h2>
 
-<div class="projects">
+<div class="cards">
 
-<div class="project-card">
-<h3>Deploy com Docker + Nginx</h3>
-<p>Aplicação containerizada com Docker rodando em servidor Linux.</p>
+<div class="card">
+<h3>Deploy com Docker</h3>
+<p>Deploy de aplicação usando Docker + Nginx</p>
 </div>
 
-<div class="project-card">
-<h3>Infraestrutura AWS</h3>
-<p>Provisionamento de infraestrutura usando Terraform.</p>
+<div class="card">
+<h3>AWS + Terraform</h3>
+<p>Infraestrutura automatizada usando Infrastructure as Code</p>
 </div>
 
-<div class="project-card">
+<div class="card">
 <h3>Pipeline CI/CD</h3>
-<p>Automação de build e deploy utilizando GitHub Actions.</p>
+<p>Automação de build e deploy com GitHub Actions</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="contato">
+<footer id="contato">
 
-<h2>Contato</h2>
+<h3>Contato</h3>
 
-<p>Email: rayane@email.com</p>
-
-<p>GitHub: github.com/rayane</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 Rayane Santana - DevOps Portfolio</p>
+<p>rayane@email.com</p>
 
 </footer>
 
